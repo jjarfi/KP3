@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rooot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag" onMousePressed="#pres" prefHeight="409.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="root" prefHeight="410.0" prefWidth="530.0">
+         <children>
+            <AnchorPane fx:id="anroot" prefHeight="409.0" prefWidth="530.0" style="-fx-background-color: #008feb;">
+               <children>
+                  <AnchorPane layoutX="103.0" layoutY="57.0" prefHeight="317.0" prefWidth="324.0" style="-fx-background-color: white; -fx-background-radius: 0.4cm;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <Text layoutX="40.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXButton buttonType="RAISED" layoutX="96.0" layoutY="248.0" onAction="#kliklogin" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.5cm;" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="user" layoutX="39.0" layoutY="94.0" prefHeight="34.0" prefWidth="245.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="pass" layoutX="39.0" layoutY="159.0" onAction="#kliklogin" prefHeight="34.0" prefWidth="245.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXToggleButton layoutX="34.0" layoutY="193.0" text="Show Password">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </children>
+                  </AnchorPane>
+                  <JFXToolbar prefHeight="34.0" prefWidth="530.0" style="-fx-background-color: #333333;">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <right>
+                        <HBox prefHeight="34.0" prefWidth="78.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#sembunyi" prefHeight="34.0" prefWidth="36.0">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_MINIMIZE" size="25.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onMouseClicked="#tutup" prefHeight="34.0" prefWidth="36.0">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="25.0" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </right>
+                     <left>
+                        <Label text="  Login Application" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </left>
+                  </JFXToolbar>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

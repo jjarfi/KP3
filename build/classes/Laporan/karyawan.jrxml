@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="41f0b463-61d3-4ae5-908f-b1bbf9ff9ae4">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     cetak.`nm_karyawan` AS cetak_nm_karyawan,
+     cetak.`nm_bagian` AS cetak_nm_bagian,
+     cetak.`nm_klasifikasi` AS cetak_nm_klasifikasi,
+     cetak.`tmpt_lahir` AS cetak_tmpt_lahir,
+     cetak.`tgl_lahir` AS cetak_tgl_lahir,
+     cetak.`jk` AS cetak_jk,
+     cetak.`st_karyawan` AS cetak_st_karyawan,
+     cetak.`pendidikan` AS cetak_pendidikan,
+     cetak.`tgl_masuk` AS cetak_tgl_masuk,
+     cetak.`no_hp` AS cetak_no_hp
+FROM
+     `cetak` cetak]]>
+	</queryString>
+	<field name="cetak_nm_karyawan" class="java.lang.String"/>
+	<field name="cetak_nm_bagian" class="java.lang.String"/>
+	<field name="cetak_nm_klasifikasi" class="java.lang.String"/>
+	<field name="cetak_tmpt_lahir" class="java.lang.String"/>
+	<field name="cetak_tgl_lahir" class="java.sql.Date"/>
+	<field name="cetak_jk" class="java.lang.String"/>
+	<field name="cetak_st_karyawan" class="java.lang.String"/>
+	<field name="cetak_pendidikan" class="java.lang.String"/>
+	<field name="cetak_tgl_masuk" class="java.sql.Date"/>
+	<field name="cetak_no_hp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="177" y="20" width="401" height="20" uuid="07dfa3ec-84a1-4619-9b25-76a1f0e4cc70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT HAWALI SORONG PAPUA BARAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="0" width="401" height="20" uuid="603a0bbc-385a-4718-a714-3fb4773d397c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEM INFORMASI PENGGOLAHAN DATA KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="40" width="401" height="20" uuid="301dc987-5d48-4fd4-ac35-7b3ce009c3c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL. MELATI KOMPLEKS RUKO YOHAN No. 2 SORONG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="652" y="0" width="100" height="19" uuid="79b49a6f-14c0-42c0-83e1-75f9dd7f4b3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="18" width="172" height="19" uuid="b8824efb-2d08-4654-9fd1-5d06174d2c48"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA KARYAWAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="31213fab-2ca3-4175-8e45-a2b8ace2d968"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="19" width="752" height="1" uuid="d7c5b845-03f9-4f3e-a51b-002a0a704a4b"/>
+			</line>
+			<staticText>
+				<reportElement x="100" y="-1" width="100" height="21" uuid="bb20b6f5-9b96-46fa-a321-88fc4332c1cb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bagian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="89" height="19" uuid="373fa8d3-b74f-4119-9f60-67e749f61556"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Klasifikasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="0" width="79" height="19" uuid="94eb3f20-c869-4c70-b6ca-111ef4ea025c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tempat Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="0" width="76" height="19" uuid="910ca471-e951-42fd-8d06-60e69c4ba8ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="-1" width="66" height="21" uuid="c924cb09-e799-46e8-9f69-015cefe7f10d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="510" y="-1" width="78" height="21" uuid="7c62b52a-8dca-436f-a68b-285360bb7968"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="598" y="1" width="54" height="19" uuid="2911bc56-487b-4150-bff4-c14dd2eeeb72"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pendidikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="663" y="1" width="89" height="19" uuid="de5bb2fe-fda0-4951-b8d7-53593e10ef2b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bell MT" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Handphone]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="1" width="752" height="1" uuid="158ce0af-2148-4b66-9a24-d681ea550168"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="07bf64e4-ebd9-4cb9-918d-447faea14b6c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_nm_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="9ca2fde4-3bff-466c-94a0-b792148c6a90"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_nm_bagian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="89" height="20" uuid="0d9f38fc-b062-4da4-82ba-d0e59d849a79"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_nm_klasifikasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="0" width="79" height="20" uuid="28bd7448-6f16-4aa2-b7d0-a991cf7b2822"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_tmpt_lahir}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Auto">
+				<reportElement x="368" y="0" width="76" height="20" uuid="c92cb24f-d79e-4dea-a243-596ab5848cb0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_tgl_lahir}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="66" height="20" uuid="7080e4b9-9340-42a3-b8c3-0e131280e94e"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_jk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="0" width="78" height="20" uuid="17bce3e7-ea55-4381-97aa-ee8bc1f80042"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_st_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="598" y="0" width="54" height="20" uuid="51ca547e-0e99-4f2f-8b53-137214b82cc6"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_pendidikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="663" y="0" width="89" height="20" uuid="72ad5e39-6b9e-4a74-9ad4-c3aaed2b8e08"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cetak_no_hp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="73" splitType="Stretch">
+			<line>
+				<reportElement x="-73" y="-32" width="1" height="67" uuid="eacdf70f-bdff-43f4-9fd3-6cfbd125843a"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

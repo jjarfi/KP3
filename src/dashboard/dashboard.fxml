@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="1185.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="564.0" prefWidth="416.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutY="53.0" prefHeight="491.0" prefWidth="416.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="14.0" prefHeight="32.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="34.0" prefWidth="50.0" text="Nama">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nama" alignment="CENTER" prefHeight="25.0" prefWidth="204.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="46.0" prefHeight="32.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="115.0" text="Bagian">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="bagian" alignment="CENTER" prefHeight="25.0" prefWidth="175.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="78.0" prefHeight="32.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="101.0" text="Klasifikasi">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="klasifikasi" alignment="CENTER" prefHeight="25.0" prefWidth="161.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="110.0" prefHeight="32.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="103.0" text="Tempat Lahir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="tempat" alignment="CENTER" prefHeight="25.0" prefWidth="163.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="142.0" prefHeight="32.0" prefWidth="258.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="103.0" text="Tanggal Lahir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="tgl" alignment="CENTER" prefHeight="25.0" prefWidth="163.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="192.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="Alamat">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="alamat" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="224.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="Agama">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="agama" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="256.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No KTP">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="noktp" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="288.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No NPWP">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nonpwp" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="320.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No. Rek Mandiri">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="norek" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="352.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No. BPJS Kesehatan">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nobpjssehat" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="384.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No. BPJS Kenaker">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nobpjskenaker" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="416.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="No. Handphone">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nohp" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="16.0" layoutY="448.0" prefHeight="32.0" prefWidth="389.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="22.0" prefWidth="195.0" text="Email">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="email" alignment="CENTER" prefHeight="25.0" prefWidth="341.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                     </children>
+                  </HBox>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="170.0" prefWidth="129.0" style="-fx-border-color: black;">
+                     <children>
+                        <ImageView fx:id="foto" fitHeight="154.0" fitWidth="120.0" layoutX="5.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="cari" focusColor="WHITE" layoutX="158.0" layoutY="11.0" onAction="#cari" prefHeight="32.0" prefWidth="193.0" promptText="Pencarian" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btncari" contentDisplay="GRAPHIC_ONLY" layoutX="360.0" layoutY="8.0" onAction="#cari" prefHeight="38.0" prefWidth="44.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="MAGNIFY" size="32.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="850.0" layoutY="294.0" prefHeight="281.0" prefWidth="321.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;">
+         <children>
+            <AnchorPane layoutY="38.0" prefHeight="221.0" prefWidth="321.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="193.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="130.0" text="Nomor Sepatu">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nosepatu" alignment="CENTER" prefHeight="25.0" prefWidth="84.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="53.0" prefHeight="32.0" prefWidth="193.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="130.0" text="Ukuran Celana">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nocelana" alignment="CENTER" prefHeight="25.0" prefWidth="81.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="90.0" prefHeight="32.0" prefWidth="193.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="130.0" text="No Helm">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nohelm" alignment="CENTER" prefHeight="25.0" prefWidth="81.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="129.0" prefHeight="32.0" prefWidth="193.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="130.0" text="Ukuran Baju">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nobaju" alignment="CENTER" prefHeight="25.0" prefWidth="81.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="169.0" prefHeight="32.0" prefWidth="193.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="130.0" text="Sarung Tangan">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="nosarung" alignment="CENTER" prefHeight="25.0" prefWidth="81.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="125.0" layoutY="1.0" prefHeight="19.0" prefWidth="84.0" text="Safety" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="447.0" layoutY="446.0" prefHeight="127.0" prefWidth="389.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;">
+         <children>
+            <AnchorPane layoutY="43.0" prefHeight="71.0" prefWidth="389.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXButton fx:id="btnprint" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="28.0" layoutY="12.0" onAction="#cetakPDF" prefHeight="46.0" prefWidth="74.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.2CM;">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="PRINTER" size="32.0" />
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="btnrefresh" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="114.0" layoutY="12.0" onAction="#resettext" prefHeight="46.0" prefWidth="74.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.2CM;">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="REFRESH" size="32.0" />
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="btnhelp" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="201.0" layoutY="12.0" prefHeight="46.0" prefWidth="74.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.2CM;">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="HELP_CIRCLE" size="32.0" />
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="btnclose" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="287.0" layoutY="13.0" prefHeight="46.0" prefWidth="74.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.2CM;">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="CLOSE_CIRCLE" size="32.0" />
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="134.0" layoutY="8.0" prefHeight="27.0" prefWidth="122.0" text="Action Panel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="445.0" layoutY="14.0" prefHeight="422.0" prefWidth="389.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutY="54.0" prefHeight="344.0" prefWidth="389.0" style="-fx-background-color: white;">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="191.0" text="1. Surat Lamaran">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtsr" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="164.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="54.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="2. Foto Copy KTP">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfck" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="165.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="96.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="3. Foto Copy Kartu Keluarga">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfckk" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="164.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="135.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="4. Foto Copy Ijazah Terakhir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfcit" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="164.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="175.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="5. Foto Copy NPWP">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfcn" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="162.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="216.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="6. Foto Copy BPJS Kenaker">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfcbk" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="164.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="255.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="7. Foto Copy BPJS Kesehatan">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtfcbpk" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="162.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="296.0" prefHeight="32.0" prefWidth="361.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="32.0" prefWidth="192.0" text="8. Pas Foto 2x3 (Dua Lembar)">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXTextField fx:id="txtpasfoto" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="166.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="361.0" text="Berkas Yang Harus di Lengkapi" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="257.0" prefWidth="321.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;">
+         <children>
+            <AnchorPane layoutY="38.0" prefHeight="196.0" prefWidth="321.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXRadioButton fx:id="rbdatabagian" layoutX="10.0" layoutY="14.0" onAction="#radiobtn" prefHeight="32.0" prefWidth="120.0" text="Data Bagian">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbdataklasi" layoutX="10.0" layoutY="46.0" onAction="#radiobtn" prefHeight="32.0" prefWidth="120.0" text="Data Klasifikasi">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <ComboBox fx:id="cbid" layoutX="27.0" layoutY="81.0" onMouseClicked="#loadmanakombo" prefHeight="40.0" prefWidth="248.0" promptText="SIlahkan Pilih" />
+                  <JFXCheckBox fx:id="ckkes" layoutX="14.0" layoutY="152.0" prefHeight="30.0" prefWidth="147.0" text="Cetak Keseluruhan">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="119.0" layoutY="1.0" prefHeight="19.0" prefWidth="84.0" text="Laporan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

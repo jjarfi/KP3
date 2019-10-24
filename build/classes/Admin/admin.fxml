@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" onMouseDragged="#drag" onMousePressed="#pres" prefHeight="669.0" prefWidth="1184.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <AnchorPane prefHeight="669.0" prefWidth="1184.0">
+         <children>
+            <JFXToolbar prefHeight="34.0" prefWidth="1184.0" style="-fx-background-color: #333333;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <right>
+                  <HBox prefHeight="34.0" prefWidth="78.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#sembunyi" prefHeight="34.0" prefWidth="36.0">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_MINIMIZE" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onMouseClicked="#tutup" prefHeight="34.0" prefWidth="36.0">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="WINDOW_CLOSE" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </right>
+            </JFXToolbar>
+            <JFXToolbar layoutY="623.0" prefHeight="46.0" prefWidth="1184.0" style="-fx-background-color: #333333;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <left>
+                  <HBox prefHeight="46.0" prefWidth="342.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#klikdashboard" prefHeight="51.0" prefWidth="58.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Dashboard">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="VIEW_GRID" size="35.0" />
+                           </graphic></JFXButton>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <JFXButton alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onAction="#klikperusahaan" prefHeight="51.0" prefWidth="51.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Perusahaan">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="BANK" size="32.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="75.0" layoutY="10.0" onAction="#klikbagian" prefHeight="51.0" prefWidth="51.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Data Bagian">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ARRANGE_SEND_BACKWARD" size="32.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="127.0" layoutY="10.0" onAction="#klikklasifikasi" prefHeight="51.0" prefWidth="51.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Data Klasifikasi">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="CHECKBOX_MULTIPLE_BLANK" size="32.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="179.0" layoutY="10.0" onAction="#klikkaryawan" prefHeight="51.0" prefWidth="51.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Data Karyawan">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="32.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="231.0" layoutY="10.0" onAction="#kliksafety" prefHeight="51.0" prefWidth="51.0" textFill="WHITE">
+                           <tooltip>
+                              <Tooltip text="Data Safety">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Tooltip>
+                           </tooltip>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="HOSPITAL" size="32.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </left>
+            </JFXToolbar>
+            <AnchorPane fx:id="jendela" layoutY="34.0" prefHeight="588.0" prefWidth="1184.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

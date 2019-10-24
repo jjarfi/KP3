@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="579.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="perusahaan.PerusahaanController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="567.0" prefWidth="1158.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.5cm;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutY="36.0" prefHeight="510.0" prefWidth="1158.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutX="14.0" layoutY="61.0" prefHeight="370.0" prefWidth="259.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID Perusahaan">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="id" prefHeight="39.0" prefWidth="196.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Text fontSmoothingType="LCD" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Perusahaan">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="nama" layoutX="10.0" layoutY="30.0" prefHeight="34.0" prefWidth="196.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Text layoutX="10.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Direktur">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="direktur" layoutX="10.0" layoutY="84.0" prefHeight="34.0" prefWidth="196.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Text layoutX="10.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Wakil Direktur">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="wadir" layoutX="10.0" layoutY="138.0" prefHeight="34.0" prefWidth="196.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Text layoutX="10.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Berdiri">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="tgl" prefHeight="35.0" prefWidth="196.0" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Text layoutX="10.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor Perusahaan">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="nomor" layoutX="10.0" layoutY="192.0" prefHeight="34.0" prefWidth="196.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnsimpan" buttonType="RAISED" layoutX="13.0" layoutY="446.0" onAction="#simpan" prefHeight="43.0" prefWidth="81.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;" text="Simpan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnupdate" buttonType="RAISED" disable="true" layoutX="103.0" layoutY="446.0" onAction="#update" prefHeight="43.0" prefWidth="81.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnhapus" buttonType="RAISED" disable="true" layoutX="193.0" layoutY="446.0" onAction="#delete" prefHeight="43.0" prefWidth="81.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;" text="Hapus" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ScrollPane layoutX="282.0" layoutY="64.0" prefHeight="444.0" prefWidth="875.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="439.0" prefWidth="875.0">
+                           <children>
+                              <TableView fx:id="tabperu" onMouseClicked="#setdaritabel" prefHeight="444.0" prefWidth="868.0">
+                                <columns>
+                                  <TableColumn fx:id="kolid" prefWidth="111.0" text="ID Perusahaan" />
+                                    <TableColumn fx:id="kolnama" prefWidth="138.0" text="Nama Perusahaan" />
+                                    <TableColumn fx:id="koldirektur" prefWidth="138.0" text="Nama Direktur" />
+                                    <TableColumn fx:id="kolwadir" prefWidth="160.0" text="Nama Wakil Direktur" />
+                                    <TableColumn fx:id="koltgl" prefWidth="119.0" text="Tanggal Berdiri" />
+                                    <TableColumn fx:id="kolnomor" prefWidth="198.0" text="Nomor Perusahaan" />
+                                </columns>
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#segarkan" text="Refresh" />
+                                          <MenuItem mnemonicParsing="false" onAction="#delete" text="Delete Data" />
+                                          <MenuItem mnemonicParsing="false" onAction="#segarkan" text="Reset Text" />
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <JFXTextField fx:id="cari" layoutX="786.0" layoutY="14.0" onKeyTyped="#cariperusahaan" prefHeight="34.0" prefWidth="259.0" promptText="Pencarian ...." />
+                  <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1079.0" layoutY="10.0" prefHeight="43.0" prefWidth="53.0" style="-fx-background-color: #008feb; -fx-background-radius: 0.3cm;" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="MAGNIFY" size="32.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

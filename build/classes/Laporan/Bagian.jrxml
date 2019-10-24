@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demi" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="84b5156e-36ce-4c00-af03-212ea4cd7cbf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="namabagian" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["select * from viewbagian order by nm_karyawan"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="bag" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM viewbagian where nm_bagian LIKE $P{bag}]]>
+	</queryString>
+	<field name="id_bagian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_bagian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_klasifikasi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_karyawan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="202" y="22" width="401" height="20" uuid="4d56e7b3-62cb-47e9-9620-9d95e6cae087"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT HAWALI SORONG PAPUA BARAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="2" width="401" height="20" uuid="089e8e94-9131-467a-bb94-7f51f33e8f2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEM INFORMASI PENGGOLAHAN DATA KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="42" width="401" height="20" uuid="7afbd379-fe07-4f2d-a418-d2f59c3f8021"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JL. MELATI KOMPLEKS RUKO YOHAN No. 2 SORONG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<textField pattern="dd-MMM-yyyy">
+				<reportElement x="689" y="0" width="100" height="19" uuid="78c81027-0eaf-4fa9-bc3b-8c4df05d4128"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="19" width="172" height="19" uuid="9a0bd6cd-1463-44fd-8657-bfaadd3c0f59"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA BAGIAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="e581c1e1-10ab-4642-b0c5-93463cc6192f"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="1" width="212" height="20" uuid="f1f89871-5a0d-4509-bb96-68fc6f6ba88d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="1" width="212" height="20" uuid="9d65a591-81cd-47a2-a9a0-c63bab2fbb7f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Bagian]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="c0649f47-e4af-410b-b0ab-7e4aa276b747"/>
+			</line>
+			<textField>
+				<reportElement x="212" y="2" width="110" height="20" uuid="6b5231fa-0f58-4a3e-8d0d-11159b82b976"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nm_bagian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="2" width="100" height="20" uuid="72b1fb3f-8fc6-41af-bcaa-73c80f64db57"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nm_karyawan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
